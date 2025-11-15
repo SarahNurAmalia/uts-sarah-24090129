@@ -1,7 +1,10 @@
 Nama: Sarah Nur Amalia
+
 NIM: 24090129
-Link GitHub Repository:https://github.com/SarahNurAmalia/uts-sarah-24090129.git
-Link GitHub Pages:https://sarahnuramalia.github.io/uts-sarah-24090129/
+
+Link GitHub Repository: https://github.com/SarahNurAmalia/uts-sarah-24090129.git
+
+Link GitHub Pages: https://sarahnuramalia.github.io/uts-sarah-24090129/
 
 Deskripsi singkat project:
 Project ini adalah implementasi Panel Administrasi (Admin Panel) sederhana yang sepenuhnya dibangun menggunakan HTML, CSS, dan JavaScript
