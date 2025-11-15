@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar-menu">
+            <button class="sidebar-item active" title="Dashboard">
+                <i class="fas fa-home"></i> 
+            </button>
+            <a href="products.html" class="sidebar-item" title="List Produk">
+                <i class="fas fa-th-large"></i> 
+            </a>
+            <button class="sidebar-item" title="Data">
+                <i class="fas fa-chart-bar"></i>
+            </button>
+            <button class="sidebar-item" title="Settings">
+                <i class="fas fa-cog"></i>
+            </button>
+            <button id="logoutBtn" class="sidebar-item logout" title="Logout">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </aside>
+
+        <main class="dashboard-main-content">
+            <h1>Dashboard</h1>
+
+            <div class="stats-grid-container">
+                <div class="stats-grid-wrapper">
+                    
+                    <div class="stat-card minimal">
+                        <i class="fas fa-shopping-bag card-icon"></i>
+                        <p class="stat-label">Total Products</p>
+                        <p id="totalProducts" class="stat-value">0</p>
+                    </div>
+                    
+                    <div class="stat-card minimal">
+                        <i class="fas fa-shopping-cart card-icon"></i>
+                        <p class="stat-label">Total Sales</p>
+                        <p id="totalSales" class="stat-value">0</p>
+                    </div>
+                    
+                    <div class="stat-card minimal">
+                        <i class="fas fa-dollar-sign card-icon"></i>
+                        <p class="stat-label">Total Revenue</p>
+                        <p id="totalRevenue" class="stat-value">Rp 0</p>
+                    </div>
+                </div>
+
+                <button id="viewProductsBtn" class="action-button">Lihat Data Produk →</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

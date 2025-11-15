@@ -1,0 +1,196 @@
+/* GLOBAL STYLES & MONOCHROME BASE */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7; 
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* 1. LOGIN PAGE */
+
+.main-login-wrapper {
+    display: flex; 
+    width: 800px; 
+    height: 550px; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 100px auto; 
+}
+.login-illustration {
+    flex: 1; 
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+}
+.illustration-image {
+    max-width: 90%; 
+    max-height: 90%; 
+    height: auto;
+    display: block;
+    padding: 10px; 
+}
+.login-form-container {
+    flex: 1; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.input-group .icon { color: #888; margin-right: 10px; }
+.input-group input { border: none; outline: none; flex-grow: 1; padding: 5px 0; font-size: 16px; }
+.forgot-password {
+    align-self: flex-end; 
+    font-size: 12px;
+    color: #555; 
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+.login-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: #333; 
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+.login-button:hover { background-color: #555; }
+.separator {
+    display: flex; align-items: center; text-align: center; width: 100%; max-width: 300px; margin: 15px 0; color: #ccc;
+}
+.separator::before, .separator::after { content: ''; flex: 1; border-bottom: 1px solid #ccc; }
+.social-login {
+    display: flex; justify-content: space-between; width: 100%; max-width: 300px; margin-bottom: 25px;
+}
+.social-button {
+    flex-basis: 48%; padding: 10px; border: 1px solid #888; background-color: white; color: #555; border-radius: 5px; cursor: pointer;
+}
+.social-button:hover { background-color: #f0f0f0; }
+.signup-text a { color: #555; text-decoration: underline; }
+.error-message { color: #cc0000; margin-top: -10px; margin-bottom: 15px; font-size: 14px; height: 18px; }
+
+
+/* DASHBOARD & PRODUCT LIST LAYOUT */
+
+.dashboard-wrapper {
+    display: flex; 
+    min-height: 100vh;
+}
+
+
+.sidebar-menu {
+    width: 70px; 
+    background-color: white;
+    border-right: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+.sidebar-item {
+    background: none; border: none; cursor: pointer; padding: 15px; font-size: 1.5em; color: #888; border-radius: 8px;
+    margin: 10px 0; 
+    text-decoration: none; 
+    transition: background-color 0.2s, color 0.2s;
+}
+.sidebar-item:hover, .sidebar-item.active { background-color: #f0f0f0; color: #333; }
+.sidebar-item.logout { margin-top: auto; margin-bottom: 20px; }
+
+/* Main Content Area */
+.dashboard-main-content, .product-main-content { 
+    flex-grow: 1; 
+    padding: 30px 40px;
+}
+.dashboard-main-content h1, .product-main-content h1 {
+    font-size: 2em; margin-top: 0; margin-bottom: 30px;
+}
+
+
+/* DASHBOARD STYLES */
+
+.stats-grid-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.stats-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.stat-card.minimal {
+    background: white; padding: 20px; border: 1px solid #eee; border-radius: 8px; text-align: center;
+}
+.card-icon {
+    font-size: 1.8em; color: #555; background-color: #f0f0f0; padding: 10px; border-radius: 50%; margin-bottom: 10px;
+}
+.stat-label {
+    margin: 0; color: #666; font-size: 0.9em;
+}
+.stat-value {
+    font-size: 1.8em; font-weight: bold; color: #333; margin-top: 5px;
+}
+.action-button {
+    margin-top: 30px; padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; transition: background-color 0.3s;
+}
+.action-button:hover { background-color: #555; }
+
+
+
+/* PRODUCT LIST STYLES */
+
+.list-product-card {
+    background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+#productTable {
+    width: 100%; border-collapse: collapse; text-align: left;
+}
+#productTable thead th {
+    background-color: white; padding: 15px 15px; border-bottom: 1px solid #ddd; font-weight: bold; color: #333;
+}
+#productTable tbody td {
+    padding: 15px 15px; border-bottom: 1px solid #eee; vertical-align: middle;
+}
+
+#productTable thead th:first-child, 
+#productTable tbody td:first-child { width: 50px; text-align: center; }
+#productTable thead th:last-child, 
+#productTable tbody td:last-child { width: 80px; text-align: center; }
+
+
+.action-btn {
+    background: none; border: none; cursor: pointer; font-size: 1em; margin: 0 3px; padding: 5px; transition: opacity 0.2s;
+}
+.action-btn.edit { color: #555; }
+.action-btn.delete { color: #888; }
+.action-btn:hover { opacity: 0.7; }
